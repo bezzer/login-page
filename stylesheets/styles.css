@@ -1,0 +1,84 @@
+body {
+  background-image: url('/images/background.jpeg');
+  background-size: cover;
+  display: flex;
+  color: #011936;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+  margin-top: 0;
+}
+
+.lp-dialog {
+  padding: 20px;
+  min-height: 200px;
+  min-width: 275px;
+  box-shadow: 0px 0px 50px rgba(244,255,253,0.7);
+  border-radius: 10px;
+  background-color: rgba(244,255,253,0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.lp-error {
+  background-color: #F9DC5C;
+  color: #EC4067;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  animation-name: appear;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+}
+
+.lp-btn {
+  padding: 15px 20px;
+  margin: 15px 0 0;
+  font-size: 1.1rem;
+  background: #EC4067;
+  border-radius: 2px;
+  color: rgb(244,255,253);
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.lp-btn-loading {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.lp-input {
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background-color: rgba(244,255,253);
+  font-size: 1.2rem;
+  margin: 0 0 15px;
+}
+
+.lp-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes pulse {
+  0% {opacity: 0.6}
+  50% {opacity: 0.3}
+  100% {opacity: 0.6}
+}
+
+@keyframes appear {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
